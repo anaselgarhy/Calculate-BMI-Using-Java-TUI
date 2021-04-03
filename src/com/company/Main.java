@@ -32,7 +32,7 @@ public class Main {
 
         Cities cities[] = new Cities[numOfCities];
 
-        //Input name of citie
+        //Input name of city
         for(int i=0; i<numOfCities; i++){
             System.out.printf("City [%d]:\n", i+1);
             System.out.printf("\t Name of city: ");
@@ -127,11 +127,11 @@ public class Main {
         System.out.printf(" Number of cities: \t%5d\n", numOfCities);
         System.out.printf(" Total number of persons: \t%5d\n", totalNumOfPersons);
         System.out.println("----------------------------------------------");
-        System.out.printf(" name of the best city which has the maximum percent of persons in normal weight: %s\n", cities[numOfBestCitiesInArray].getName());
+        System.out.printf(" name of the best city which has the maximum percent of persons in normal weight: %s\n", category[1].getBestCityInCategory());
         System.out.printf(" BMI category \'Normal\' these people’s percent ratio %5d%%\n", (cities[numOfBestCitiesInArray].getNormalPersons()/totalNumOfPersons)*100);
-        System.out.printf(" the worst city which has the maximum percent of persons in obese BMI: %s\n", cities[numOfBadCitiesInArray].getName());
+        System.out.printf(" the worst city which has the maximum percent of persons in obese BMI: %s\n", category[3].getBestCityInCategory());
         System.out.printf(" category \'Obese\' and these people’s percent ratio: %5d%%\n", (cities[numOfBadCitiesInArray].getObesePersons()/totalNumOfPersons)*100);
-        System.out.printf(" city which has the minimum percent of persons in underweight BMI: %s\n", cities[numOfLowCitiesInArray].getName());
+        System.out.printf(" city which has the minimum percent of persons in underweight BMI: %s\n", category[0].getBestCityInCategory());
         System.out.printf(" category \'Underweight\' and these people’s percent ratio: %5d%%\n", (cities[numOfLowCitiesInArray].getUnderweightPersons()/totalNumOfPersons)*100);
         System.out.println("----------------------------------------------\n");
 
